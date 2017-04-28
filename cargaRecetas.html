@@ -1,23 +1,87 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Paginas de Recetas</title>
-        <meta name="description" content=".">
-        <link rel="stylesheet" href="css/homestyle.css">
-    </head>
-    <body>
-      <div id="header">
+<head>
+    <meta charset="utf-8">
+    <title>Paginas de Recetas</title>
+    <meta name="description" content=".">
+    <link rel="stylesheet" href="css/fav-cargaRStyle.css">
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <div id="header">
         <ul class="nav">
-          <li><a href="index.html">Home</a>
-            <ul>
-              <li><a href="entradas.html">Entradas</a></li>
-              <li><a href="comidas.html">Comidas</a></li>
-              <li><a href="postres.html">Postres</a></li>
-            </ul>
+            <li><a href="index.html" target="_blank">Home</a>
+                <ul class = "subnav">
+                    <li><a href="entradas.html">Entradas</a>
+                    </li>
+                    <li><a href="comidas.html">Comidas</a>
+                    </li>
+                    <li><a href="postres.html">Postres</a>
+                    </li>
+                </ul>
             </li>
-          <li><a href="favoritos.html">Favoritos</a></li>
-          <li><a href="cargaRecetas.html">Carga tu Propia Receta</a></li>
-      </div>
-	</body>
+            <li><a href="favoritos.html" target="_blank">Favoritos</a>
+            </li>
+            <li><a href="cargaRecetas.html" target="_blank">Carga tu Propia Receta</a>
+            </li>
+    </div>
+    <div class="contenedor">
+        <form class="formulario">
+            	<div class="datos-receta">
+                	<label>Receta:</label>
+                	<input type="text" name="name" size="35" 	maxlength="50"
+				</div>
+                <div class="datos-receta">
+                    <label>Comensales:</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="botones">
+                    <label>Categorias:</label>
+					Entrada:<input type="radio" value="Entrada" name=Categorias> 
+					Comida:<input type="radio" value="Comida" name=Categorias> Postres:
+                    <input type="radio" value="Postres" name=Categorias>
+
+                </div>
+                <div class="datos-receta">
+                    <label>Tiempo de Preparacion:</label>
+                    <input type="text" name="name" size="35" maxlength="50" />
+                </div>
+
+                <div class="datos-receta">
+                    <label>Ingredientes:</label>
+                    <textarea rows="6" cols="50" name="message" placeholder="Escribe los Ingredientes necesarios para la receta."></textarea>
+                </div>
+                <div class="datos-receta">
+                    <label>Preparacion:</label>
+                    <textarea rows="6" cols="50" name="message" placeholder="Preparacion."></textarea>
+                </div>
+                <div class="datos-receta">
+                    <label>Autor:</label>
+                    <input type="text" name="name" size="35" maxlength="50" />
+                </div>
+                <div class="datos-receta">
+                    <label>Email:</label>
+                    <input type="text" name="email-address" size="35" maxlength="50" />
+                </div>
+                <div class="botones-enviar-cancelar">
+                    <button class="boton" type="submit">Enviar </button>
+                </div>
+                <div class="botones-enviar-cancelar">
+                    <button class="boton" type="submit">Cancelar </button>
+                </div>
+        </form>
+        </div>
+</body>
