@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>Juego Piedra- Papel - Tijera</title>
         <meta name="description" content=".">
-        <link rel="stylesheet" href="css/piedrapapeltijera.css">
+        <link rel="stylesheet" href="../css/piedrapapeltijera.css">
     </head>
     <body>
 		    <h1>Estas preparado para jugar al Piedra Papel o Tijera?</h1>
-		      <div class= "imagenes"><img src= "imagenes/piedrapapeltijera.png">
+		      <div class= "imagenes"><img src= "../imagenes/piedrapapeltijera.png">
 		      </div>
 
       <div id="jugadaUsuario">
@@ -25,15 +25,20 @@
 
       </div>
 
-      <div class="jugar">
-        <button onclick="jugar()">Jugar</button>
-      </div>
+
       <input id="check" type="checkbox" checked=>Cambiar dificultad
       <div id="resultado">
 
       </div>
-
-    <script type="text/javascript" src="java/piedrapapeltijera.js"></script>
+      <table id="tablaResultado">
+        <thead>
+            <tr>
+              <th>Numero de partida</th>
+              <th>Ganador</th>
+            </tr>
+        </thead>
+      </table>
+    <script type="text/javascript" src="../js/piedrapapeltijera.js"></script>
 
 	</body>
 </html>

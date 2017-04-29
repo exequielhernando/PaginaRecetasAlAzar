@@ -3,8 +3,8 @@ body{
 }
 
 .fondo{
-	background: url(../imagenes/homeImage.jpg);
-	background-size: cover;
+	background: url(../imagenes/homeImage.jpg) no-repeat center center fixed; 
+  background-size: cover;
 	height: auto;
 	left: 0;
 	margin: 0;
@@ -15,15 +15,16 @@ body{
 	width: 100%;
 	z-index: -1;
 	text-align:center;
-}
-.fondo h1{
-	text-align: center;
-	color: gray;
-	position: absolute;
-	top:50%;
-	width: 100%;
+
 }
 
+.fondo h1{
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:30%;
+	width: 100%;
+}
 
 * {
 margin:0px;
@@ -74,6 +75,7 @@ list-style:none;
 	right:-140px;
 	top:0px;
 }
+
 .subnav li{
 	position: absolute;
 	top: auto;
